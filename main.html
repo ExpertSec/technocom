@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perbaikan Elektronik - Techo Com</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.3"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans bg-gray-100 text-gray-900">
+    <header class="bg-blue-600 text-white">
+      <div class="max-w-7xl mx-auto px-4 py-6">
+        <nav class="flex justify-between items-center">
+          <div class="text-2xl font-bold">Techo Com</div>
+          <div class="space-x-6 hidden md:flex">
+            <a href="#home" class="hover:text-blue-300">Beranda</a>
+            <a href="#services" class="hover:text-blue-300">Layanan</a>
+            <a href="#contact" class="hover:text-blue-300">Kontak</a>
+          </div>
+          <div class="md:hidden">
+            <button class="text-2xl" id="menuButton">☰</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section id="home" class="bg-blue-500 text-white py-16 text-center">
+      <div class="container mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold">
+          Perbaikan Elektronik Terpercaya
+        </h1>
+        <p class="mt-4 text-lg md:text-xl">
+          Kami menyediakan layanan perbaikan berbagai perangkat elektronik
+          dengan kualitas terbaik
+        </p>
+        <a
+          href="#contact"
+          class="mt-8 inline-block bg-white text-blue-600 py-2 px-6 rounded-full font-semibold hover:bg-gray-100 transition"
+          >Hubungi Kami</a
+        >
+      </div>
+    </section>
+    <section id="services" class="py-16 bg-gray-50">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-8">Layanan Kami</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold">Perbaikan Laptop</h3>
+            <p class="mt-4">
+              Perbaikan berbagai jenis laptop mulai dari Asus, HP, Axio,
+              Toshiba, Lenovo, kecuali produk Apple.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold">Perbaikan Ponsel</h3>
+            <p class="mt-4">
+              Layanan perbaikan ponsel dengan berbagai masalah, mulai dari LCD
+              hingga mati total.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold">Perbaikan Komputer</h3>
+            <p class="mt-4">
+              Layanan untuk perakitan PC tingkat jadul hingga PC gaming.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="py-16 bg-blue-600 text-white">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-8">Kontak Kami</h2>
+        <p class="mb-6 text-lg">
+          Jika Anda membutuhkan layanan perbaikan, hubungi kami melalui platform
+          berikut:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <a
+              href="https://web.facebook.com/profile.php?id=61567345926356"
+              target="_blank"
+              class="text-blue-600 text-xl font-semibold hover:text-blue-800 transition"
+            >
+              <i class="ph-facebook-logo text-4xl mb-4"></i>
+              Facebook
+            </a>
+            <p class="mt-2 text-sm text-gray-600">
+              Kunjungi halaman kami di Facebook
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <a
+              href="https://wa.me/08888777698"
+              target="_blank"
+              class="text-green-500 text-xl font-semibold hover:text-green-700 transition"
+            >
+              <i class="ph-whatsapp-logo text-4xl mb-4"></i>
+              WhatsApp
+            </a>
+            <p class="mt-2 text-sm text-gray-600">Hubungi kami via WhatsApp</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <a
+              href="https://www.yourwebsite.com"
+              target="_blank"
+              class="text-gray-800 text-xl font-semibold hover:text-gray-600 transition"
+            >
+              <i class="ph-globe text-4xl mb-4"></i>
+              Website
+            </a>
+            <p class="mt-2 text-sm text-gray-600">
+              Kunjungi website resmi kami
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <a
+              href="https://www.instagram.com/yourprofile"
+              target="_blank"
+              class="text-pink-500 text-xl font-semibold hover:text-pink-700 transition"
+            >
+              <i class="ph-instagram-logo text-4xl mb-4"></i>
+              Instagram
+            </a>
+            <p class="mt-2 text-sm text-gray-600">Follow kami di Instagram</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6 text-center">
+      <p>&copy; 2025 Techo Com - Semua Hak Cipta Dilindungi</p>
+    </footer>
+
+    <script>
+      const menuButton = document.getElementById("menuButton");
+      const menu = document.querySelector("nav div.md\\:flex");
+      menuButton.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
